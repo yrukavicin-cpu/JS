@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Dropdown Menu</h1>
+
+        <section>
+            <h2>Single Select</h2>
+            <div class="dropdown" id="single-dropdown">
+                <button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
+                    <span class="dropdown-value">Оберіть технологію</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="dropdown-menu">
+                    <input type="text" class="dropdown-search" placeholder="Пошук..." aria-label="Пошук">
+                    <div class="options-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Multi Select</h2>
+            <div class="dropdown" id="multi-dropdown">
+                <button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
+                    <span class="dropdown-value">Оберіть технології</span>
+                    <span class="badge" hidden>0</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="selected-tags"></div>
+                <div class="dropdown-menu">
+                    <input type="text" class="dropdown-search" placeholder="Пошук..." aria-label="Пошук">
+                    <div class="dropdown-actions">
+                        <button class="btn-select-all">Select All</button>
+                        <button class="btn-clear-all">Clear All</button>
+                    </div>
+                    <div class="options-list"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
